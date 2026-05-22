@@ -9,28 +9,32 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg {
-      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), 
+      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.55)), 
                   url('https://source.unsplash.com/2000x1200/?serene-misty-forest-sunlight') center/cover no-repeat fixed;
     }
-    .nav-link { transition: all 0.3s; }
-    .nav-link:hover { color: #10b981; }
+    .section-bg {
+      background: linear-gradient(rgba(0,0,0,0.03), rgba(0,0,0,0.03)), url('https://source.unsplash.com/1600x900/?rolling-hills-sagebrush') center/cover;
+    }
+    .river-bg {
+      background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.3)), url('https://source.unsplash.com/1600x900/?peaceful-river-forest') center/cover;
+    }
     .card-hover:hover {
       transform: translateY(-12px);
-      box-shadow: 0 30px 60px -15px rgb(16 185 129 / 0.2);
+      box-shadow: 0 30px 60px -15px rgb(16 185 129 / 0.25);
     }
   </style>
 </head>
 <body class="bg-stone-50 text-stone-800">
 
   <!-- NAV -->
-  <nav class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50">
+  <nav class="bg-white/90 backdrop-blur-md border-b sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
-      <div class="text-2xl font-light tracking-tight">Dr. Tallis Barker</div>
+      <div class="text-2xl font-light tracking-tight text-emerald-800">Dr. Tallis Barker</div>
       <div class="flex gap-8 text-sm font-medium">
-        <a href="#coaching" class="nav-link">Coaching</a>
-        <a href="#" class="nav-link">About</a>
-        <a href="#" class="nav-link">Articles</a>
-        <a href="#" class="nav-link">Contact</a>
+        <a href="#coaching" class="hover:text-emerald-700 transition">Coaching</a>
+        <a href="#" class="hover:text-emerald-700 transition">About</a>
+        <a href="#" class="hover:text-emerald-700 transition">Articles</a>
+        <a href="#" class="hover:text-emerald-700 transition">Contact</a>
       </div>
     </div>
   </nav>
@@ -38,16 +42,15 @@
   <!-- HERO -->
   <section class="hero-bg h-screen flex items-center justify-center text-white text-center px-6">
     <div class="max-w-4xl mx-auto">
-      <p class="uppercase tracking-[4px] text-emerald-200 text-sm mb-6">Water Fasting Guidance</p>
+      <p class="uppercase tracking-widest text-emerald-100 text-sm mb-4">Guided Water Fasting</p>
       <h1 class="text-6xl md:text-7xl font-light tracking-tighter leading-none mb-8">
         Let your body remember<br>how to heal
       </h1>
       <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-12 opacity-90">
-        Personalized, safe water fasting support with one of the most experienced guides in the English-speaking world.
+        Personalized coaching with Dr. Tallis Barker — a recognized leader in therapeutic water fasting.
       </p>
-      <a href="#coaching" 
-         class="inline-block bg-emerald-700 hover:bg-emerald-800 px-10 py-6 rounded-2xl text-lg font-medium transition-all">
-        Start Your Journey →
+      <a href="#coaching" class="inline-block bg-white text-emerald-800 hover:bg-emerald-50 px-10 py-6 rounded-2xl text-lg font-medium transition-all">
+        Begin Your Healing Journey
       </a>
     </div>
   </section>
@@ -59,58 +62,72 @@
         <img src="https://waterfasting.org/wp-content/uploads/2023/05/tallis-barker.jpg" alt="Dr. Tallis Barker" class="w-full">
       </div>
       <div>
-        <h2 class="text-5xl font-light mb-8">A Quiet Guide for Deep Healing</h2>
-        <p class="text-lg leading-relaxed text-stone-600 mb-6">
-          With over 15 years of personal fasting experience and more than 1,000 clients guided, 
-          Dr. Tallis Barker offers a rare combination of scientific understanding and profound respect for the body’s natural intelligence.
+        <h2 class="text-5xl font-light mb-6">Welcome. I’m Dr. Tallis Barker</h2>
+        <p class="text-lg leading-relaxed text-stone-600 mb-8">
+          With over 15 years of personal fasting experience and more than 1,000 clients successfully guided through water fasts of 3 to 40 days, 
+          I offer safe, personalized coaching rooted in both scientific understanding and deep respect for the body’s natural intelligence.
         </p>
-        <p class="italic text-stone-500">"The body knows how to heal. My role is to create the conditions where that intelligence can fully express itself."</p>
+        <p class="italic text-stone-500">"The body knows how to heal. My role is to create the safe conditions where that intelligence can fully express itself."</p>
       </div>
     </div>
   </section>
 
-  <!-- FAST OPTIONS -->
+  <!-- CONDITIONS -->
+  <section class="py-24 section-bg">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-center text-5xl font-light mb-16">Healing Support For</h2>
+      <div class="grid md:grid-cols-2 gap-8 text-lg">
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 mt-1">→</span> Digestive issues (IBS, SIBO, ulcerative colitis)</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 mt-1">→</span> Long Covid & post-viral fatigue</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 mt-1">→</span> Autoimmune conditions</li>
+        </ul>
+        <ul class="space-y-4">
+          <li class="flex items-start gap-3"><span class="text-emerald-600 mt-1">→</span> Hormonal imbalances</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 mt-1">→</span> Reproductive health (fibroids, cysts)</li>
+          <li class="flex items-start gap-3"><span class="text-emerald-600 mt-1">→</span> Chronic inflammation & fatigue</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAST LENGTHS -->
   <section id="coaching" class="py-24 bg-stone-100">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-center text-5xl font-light mb-6">Find Your Right Depth</h2>
-      <p class="text-center text-stone-600 max-w-lg mx-auto mb-16">
-        Whether you're new to fasting or seeking profound transformation, there is a path that fits you.
-      </p>
+      <h2 class="text-center text-5xl font-light mb-6">Choose Your Depth of Healing</h2>
+      <p class="text-center text-stone-600 max-w-lg mx-auto mb-16">From gentle reset to profound transformation</p>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         <div class="bg-white p-10 rounded-3xl card-hover transition-all">
-          <h3 class="text-2xl font-medium mb-1">36 Hours</h3>
-          <p class="text-emerald-600 text-5xl font-light mb-6">Gentle Introduction</p>
-          <p class="text-stone-600 mb-8">Ideal first experience. Mental clarity, rest, and a taste of your body’s healing power.</p>
+          <h3 class="text-2xl font-medium">36 Hours</h3>
+          <p class="text-emerald-600 text-5xl font-light my-4">Gentle Reset</p>
+          <p class="text-stone-600">Ideal first experience. Clarity, rest, and a taste of your body’s healing power.</p>
         </div>
-
         <div class="bg-white p-10 rounded-3xl card-hover transition-all">
-          <h3 class="text-2xl font-medium mb-1">3–5 Days</h3>
-          <p class="text-emerald-600 text-5xl font-light mb-6">Deep Reset</p>
-          <p class="text-stone-600 mb-8">Significant detoxification, emotional lightness, and restored energy.</p>
+          <h3 class="text-2xl font-medium">3–5 Days</h3>
+          <p class="text-emerald-600 text-5xl font-light my-4">Deep Reset</p>
+          <p class="text-stone-600">Significant detoxification and renewed vitality.</p>
         </div>
-
         <div class="bg-white p-10 rounded-3xl card-hover transition-all">
-          <h3 class="text-2xl font-medium mb-1">7–10 Days</h3>
-          <p class="text-emerald-600 text-5xl font-light mb-6">Transformative</p>
-          <p class="text-stone-600 mb-8">The most common and powerful length for meaningful healing and insight.</p>
+          <h3 class="text-2xl font-medium">7–10 Days</h3>
+          <p class="text-emerald-600 text-5xl font-light my-4">Transformation</p>
+          <p class="text-stone-600">The sweet spot for most people seeking meaningful healing.</p>
         </div>
-
         <div class="bg-white p-10 rounded-3xl card-hover transition-all border-2 border-emerald-700">
-          <h3 class="text-2xl font-medium mb-1">14–40 Days</h3>
-          <p class="text-emerald-700 text-5xl font-light mb-6">Profound Healing</p>
-          <p class="text-stone-600 mb-8">For chronic conditions and those called to a true rebirth.</p>
+          <h3 class="text-2xl font-medium">14–40 Days</h3>
+          <p class="text-emerald-700 text-5xl font-light my-4">Profound Healing</p>
+          <p class="text-stone-600">For serious chronic conditions and deep renewal.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FINAL CTA -->
-  <section class="py-24 bg-emerald-800 text-white text-center">
+  <!-- CTA -->
+  <section class="river-bg py-24 text-white text-center">
     <div class="max-w-2xl mx-auto px-6">
-      <h2 class="text-4xl font-light mb-8">Ready to begin?</h2>
+      <h2 class="text-4xl font-light mb-8">Ready to begin your healing journey?</h2>
       <a href="#" class="inline-block bg-white text-emerald-800 px-12 py-6 rounded-2xl text-lg font-medium hover:bg-emerald-100 transition">
-        Apply for Personal Coaching
+        Book a Consultation
       </a>
     </div>
   </section>
