@@ -9,32 +9,45 @@
   <style>
     body { font-family: 'Inter', system-ui, sans-serif; }
     .hero-bg {
-      background: linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.5)), 
-                  url('https://source.unsplash.com/2000x1200/?peaceful-misty-forest-sunlight') center/cover no-repeat fixed;
+      background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.55)), 
+                  url('https://source.unsplash.com/2000x1200/?serene-misty-forest-sunlight') center/cover no-repeat fixed;
     }
-    .nature-text { color: #3f5a3f; }
+    .nav-link { transition: all 0.3s; }
+    .nav-link:hover { color: #10b981; }
     .card-hover:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 25px 50px -12px rgb(0 0 0 / 0.15);
+      transform: translateY(-12px);
+      box-shadow: 0 30px 60px -15px rgb(16 185 129 / 0.2);
     }
   </style>
 </head>
 <body class="bg-stone-50 text-stone-800">
 
+  <!-- NAV -->
+  <nav class="bg-white/80 backdrop-blur-md border-b sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-6 py-5 flex justify-between items-center">
+      <div class="text-2xl font-light tracking-tight">Dr. Tallis Barker</div>
+      <div class="flex gap-8 text-sm font-medium">
+        <a href="#coaching" class="nav-link">Coaching</a>
+        <a href="#" class="nav-link">About</a>
+        <a href="#" class="nav-link">Articles</a>
+        <a href="#" class="nav-link">Contact</a>
+      </div>
+    </div>
+  </nav>
+
   <!-- HERO -->
   <section class="hero-bg h-screen flex items-center justify-center text-white text-center px-6">
     <div class="max-w-4xl mx-auto">
-      <p class="text-emerald-200 tracking-[3px] text-sm mb-4">GUIDED WATER FASTING</p>
+      <p class="uppercase tracking-[4px] text-emerald-200 text-sm mb-6">Water Fasting Guidance</p>
       <h1 class="text-6xl md:text-7xl font-light tracking-tighter leading-none mb-8">
-        Return to your body's<br>innate intelligence
+        Let your body remember<br>how to heal
       </h1>
-      <p class="text-xl md:text-2xl max-w-2xl mx-auto opacity-90 mb-12">
-        Safe, personalized water fasting guidance with Dr. Tallis Barker — 
-        combining decades of experience with deep respect for nature’s healing wisdom.
+      <p class="text-xl md:text-2xl max-w-2xl mx-auto mb-12 opacity-90">
+        Personalized, safe water fasting support with one of the most experienced guides in the English-speaking world.
       </p>
       <a href="#coaching" 
-         class="inline-block bg-white text-emerald-800 hover:bg-emerald-100 px-10 py-5 rounded-full text-lg font-medium transition-all">
-        Begin Your Healing Journey
+         class="inline-block bg-emerald-700 hover:bg-emerald-800 px-10 py-6 rounded-2xl text-lg font-medium transition-all">
+        Start Your Journey →
       </a>
     </div>
   </section>
@@ -42,17 +55,16 @@
   <!-- DR TALLIS -->
   <section class="py-24 bg-white">
     <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-16 items-center">
-      <div class="rounded-3xl overflow-hidden shadow-xl">
-        <img src="https://waterfasting.org/wp-content/uploads/2023/05/tallis-barker.jpg" 
-             alt="Dr. Tallis Barker" class="w-full">
+      <div class="rounded-3xl overflow-hidden shadow-2xl">
+        <img src="https://waterfasting.org/wp-content/uploads/2023/05/tallis-barker.jpg" alt="Dr. Tallis Barker" class="w-full">
       </div>
       <div>
-        <h2 class="text-5xl font-light nature-text mb-6">Dr. Tallis Barker</h2>
-        <p class="text-lg leading-relaxed text-stone-600 mb-8">
-          For over 15 years I have guided more than 1,000 people through water fasts of varying lengths. 
-          My approach bridges scientific understanding with the profound intelligence of the human body and the natural world.
+        <h2 class="text-5xl font-light mb-8">A Quiet Guide for Deep Healing</h2>
+        <p class="text-lg leading-relaxed text-stone-600 mb-6">
+          With over 15 years of personal fasting experience and more than 1,000 clients guided, 
+          Dr. Tallis Barker offers a rare combination of scientific understanding and profound respect for the body’s natural intelligence.
         </p>
-        <p class="text-emerald-700 font-medium">Humble, evidence-informed, and deeply committed to your safety and transformation.</p>
+        <p class="italic text-stone-500">"The body knows how to heal. My role is to create the conditions where that intelligence can fully express itself."</p>
       </div>
     </div>
   </section>
@@ -60,40 +72,46 @@
   <!-- FAST OPTIONS -->
   <section id="coaching" class="py-24 bg-stone-100">
     <div class="max-w-6xl mx-auto px-6">
-      <h2 class="text-center text-5xl font-light nature-text mb-6">Choose Your Path to Renewal</h2>
-      <p class="text-center text-stone-600 max-w-md mx-auto mb-16">
-        Every fast is different. Every body is unique.
+      <h2 class="text-center text-5xl font-light mb-6">Find Your Right Depth</h2>
+      <p class="text-center text-stone-600 max-w-lg mx-auto mb-16">
+        Whether you're new to fasting or seeking profound transformation, there is a path that fits you.
       </p>
       
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-        <div class="bg-white p-10 rounded-3xl shadow-sm card-hover transition-all duration-500">
-          <div class="h-2 w-12 bg-emerald-600 rounded-full mb-8"></div>
+        <div class="bg-white p-10 rounded-3xl card-hover transition-all">
           <h3 class="text-2xl font-medium mb-1">36 Hours</h3>
-          <p class="text-emerald-600 text-4xl font-light mb-6">Gentle Reset</p>
-          <p class="text-stone-600">Perfect for beginners. Experience mental clarity and your body’s first deep rest.</p>
+          <p class="text-emerald-600 text-5xl font-light mb-6">Gentle Introduction</p>
+          <p class="text-stone-600 mb-8">Ideal first experience. Mental clarity, rest, and a taste of your body’s healing power.</p>
         </div>
-        
-        <div class="bg-white p-10 rounded-3xl shadow-sm card-hover transition-all duration-500">
-          <div class="h-2 w-12 bg-emerald-600 rounded-full mb-8"></div>
+
+        <div class="bg-white p-10 rounded-3xl card-hover transition-all">
           <h3 class="text-2xl font-medium mb-1">3–5 Days</h3>
-          <p class="text-emerald-600 text-4xl font-light mb-6">True Renewal</p>
-          <p class="text-stone-600">Significant detoxification, emotional release, and restored vitality.</p>
+          <p class="text-emerald-600 text-5xl font-light mb-6">Deep Reset</p>
+          <p class="text-stone-600 mb-8">Significant detoxification, emotional lightness, and restored energy.</p>
         </div>
-        
-        <div class="bg-white p-10 rounded-3xl shadow-sm card-hover transition-all duration-500">
-          <div class="h-2 w-12 bg-emerald-600 rounded-full mb-8"></div>
+
+        <div class="bg-white p-10 rounded-3xl card-hover transition-all">
           <h3 class="text-2xl font-medium mb-1">7–10 Days</h3>
-          <p class="text-emerald-600 text-4xl font-light mb-6">Transformation</p>
-          <p class="text-stone-600">The sweet spot for most people. Deep healing and lasting insight.</p>
+          <p class="text-emerald-600 text-5xl font-light mb-6">Transformative</p>
+          <p class="text-stone-600 mb-8">The most common and powerful length for meaningful healing and insight.</p>
         </div>
-        
-        <div class="bg-white p-10 rounded-3xl shadow-sm card-hover transition-all duration-500 border border-emerald-200">
-          <div class="h-2 w-12 bg-emerald-700 rounded-full mb-8"></div>
+
+        <div class="bg-white p-10 rounded-3xl card-hover transition-all border-2 border-emerald-700">
           <h3 class="text-2xl font-medium mb-1">14–40 Days</h3>
-          <p class="text-emerald-700 text-4xl font-light mb-6">Profound Healing</p>
-          <p class="text-stone-600">For serious conditions and those seeking life-changing transformation.</p>
+          <p class="text-emerald-700 text-5xl font-light mb-6">Profound Healing</p>
+          <p class="text-stone-600 mb-8">For chronic conditions and those called to a true rebirth.</p>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="py-24 bg-emerald-800 text-white text-center">
+    <div class="max-w-2xl mx-auto px-6">
+      <h2 class="text-4xl font-light mb-8">Ready to begin?</h2>
+      <a href="#" class="inline-block bg-white text-emerald-800 px-12 py-6 rounded-2xl text-lg font-medium hover:bg-emerald-100 transition">
+        Apply for Personal Coaching
+      </a>
     </div>
   </section>
 
